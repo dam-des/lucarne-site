@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucarne — Confidentialité</title>
+<meta name="description" content="Politique de confidentialité de l'application Lucarne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400..700&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #080F0A;
+    --surface: #101912;
+    --surface-raised: #1A251D;
+    --grass: #40D872;
+    --floodlight: #F4F6F0;
+    --slate: #7E8A80;
+    --gold: #E0AF3B;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--night);
+    color: var(--floodlight);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  h1, h2, .teko { font-family: 'Teko', sans-serif; font-weight: 600; margin: 0; }
+  a { color: var(--grass); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 20px 0; border-bottom: 1px solid var(--surface-raised); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-mark {
+    width: 26px; height: 26px;
+    background: linear-gradient(135deg, var(--grass), #006925);
+    border-radius: 6px; flex: none;
+  }
+  .logo-text { font-family: 'Teko', sans-serif; font-size: 22px; font-weight: 600; color: var(--floodlight); }
+  nav a { color: var(--slate); text-decoration: none; font-size: 16px; }
+
+  main { padding: 44px 0 64px; }
+  h1.page-title { font-size: 46px; margin-bottom: 6px; }
+  .updated { color: var(--slate); font-size: 15px; margin-bottom: 36px; }
+
+  h2 {
+    font-size: 26px; margin-top: 40px; margin-bottom: 10px;
+    color: var(--grass);
+  }
+  p, li { color: var(--floodlight); font-size: 17px; }
+  p.muted, li.muted { color: var(--slate); }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--surface-raised);
+    border-radius: 12px; padding: 18px 20px; margin: 16px 0;
+  }
+  .card.warn { border-color: var(--gold); }
+  code {
+    background: var(--surface-raised); padding: 2px 6px; border-radius: 4px;
+    font-size: 15px;
+  }
+
+  footer {
+    border-top: 1px solid var(--surface-raised);
+    padding: 24px 0; color: var(--slate); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="../">
+      <div class="logo-mark"></div>
+      <span class="logo-text">Lucarne</span>
+    </a>
+    <nav><a href="../">← Accueil</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 class="page-title">Politique de confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 6 septembre 2026</p>
+
+  <p>
+    Lucarne est un jeu quotidien de devinette de footballeurs. Cette page explique
+    quelles données sont collectées, pourquoi, et comment les gérer. Nous n'exigeons
+    ni compte, ni email, ni mot de passe pour jouer.
+  </p>
+
+  <h2>Ce qui reste uniquement sur votre appareil</h2>
+  <p>
+    Vos statistiques de jeu (parties jouées, séries, score, badges, Panthéon des
+    légendes trouvées) sont stockées localement sur votre téléphone. Nous n'y avons
+    pas accès et elles ne quittent jamais l'appareil, sauf si vous activez la
+    fonctionnalité Amis ci-dessous.
+  </p>
+
+  <h2>Ce qui est envoyé à nos serveurs (fonctionnalité Amis)</h2>
+  <p>Si vous ouvrez l'onglet « Amis », l'app crée automatiquement un compte anonyme
+    (aucun email, aucun mot de passe) via Supabase, notre hébergeur de base de
+    données. Sont alors stockés :</p>
+  <ul>
+    <li>un identifiant anonyme et un <strong>code ami</strong> (ex. <code>LUC-7F2K1</code>) ;</li>
+    <li>un <strong>pseudo</strong>, uniquement si vous choisissez d'en définir un ;</li>
+    <li>votre <strong>score et vos statistiques de jeu</strong>, pour les afficher
+      dans le classement de vos amis ;</li>
+    <li>la liste des joueurs que vous avez ajoutés comme amis.</li>
+  </ul>
+  <p>Ces données ne sont visibles que par les amis que vous avez ajoutés avec leur
+    propre code — jamais publiquement. Retirer un ami ou ne jamais utiliser cet
+    onglet évite toute collecte au-delà du stockage local.</p>
+
+  <h2>Publicité</h2>
+  <p>
+    Certains indices en jeu sont débloqués en visionnant une publicité vidéo
+    récompensée, fournie par <strong>Google AdMob</strong>. AdMob peut utiliser un
+    identifiant publicitaire de votre appareil pour proposer des publicités, y
+    compris personnalisées selon votre choix.
+  </p>
+  <div class="card">
+    <p style="margin:0">
+      Si vous êtes dans l'Union européenne ou au Royaume-Uni, un écran de
+      consentement s'affiche au premier lancement, avant toute publicité — vous
+      pouvez y choisir des publicités personnalisées ou non, et revenir sur ce
+      choix à tout moment via « Gérer le consentement pub » dans la fiche règles
+      de l'app (bouton « ? »).
+    </p>
+  </div>
+  <p class="muted">
+    Google explique sa propre gestion des données ici :
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+  </p>
+
+  <h2>Ce que nous ne faisons pas</h2>
+  <ul>
+    <li>Pas de vente de données à des tiers.</li>
+    <li>Pas de traceur publicitaire en dehors de Google AdMob.</li>
+    <li>Pas de photo, pas de donnée biométrique, pas de géolocalisation.</li>
+    <li>Pas de compte email/mot de passe — aucun mot de passe n'est jamais demandé.</li>
+  </ul>
+
+  <h2>Vos droits</h2>
+  <p>
+    Vous pouvez supprimer vous-même, à tout moment, votre pseudo, votre code
+    ami et votre score partagé : bouton « Supprimer mes données » dans
+    l'onglet Amis. Ils disparaissent immédiatement du classement de tous vos
+    amis. Pour toute autre demande d'accès ou de correction, écrivez-nous à
+    l'adresse ci-dessous — nous répondons sous 30 jours.
+  </p>
+
+  <h2>Âge</h2>
+  <p>Lucarne s'adresse à un public généraliste et n'est pas conçu spécifiquement
+    pour les enfants. Nous ne collectons pas sciemment de données concernant des
+    mineurs de moins de 13 ans.</p>
+
+  <h2>Modifications</h2>
+  <p>Cette page peut évoluer avec l'app ; la date de mise à jour en haut reflète
+    la dernière version.</p>
+
+  <h2>Contact</h2>
+  <p>
+    Pour toute question ou demande liée à vos données :
+    <a href="mailto:damdes-studio@hotmail.com">damdes-studio@hotmail.com</a>
+  </p>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Lucarne</div>
+</footer>
+
+</body>
+</html>
